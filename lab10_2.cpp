@@ -10,11 +10,11 @@ int main (){
 	dest.open("cheerbook_copy.txt");
 	
     string textline;
-    cout << "-------------------- BOOM ---------------------" << endl;
+    dest << "-------------------- BOOM ---------------------" << endl;
     while(getline(source,textline)){
         dest << textline << endl;
     }
-    cout << "-------------------- HA!! ---------------------" << endl;
+    dest << "-------------------- HA!! ---------------------" << endl;
 
     source.close();
     dest.close();
